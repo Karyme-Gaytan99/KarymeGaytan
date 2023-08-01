@@ -2,7 +2,7 @@ html{
     background-color:bisque ;
     height: 100%;
     font-family: 'Roboto Slab', serif;
-    color: rgb(100, 99, 99);
+    color: rgb(86, 86, 86);
     font-size: 15px;
 } 
 
@@ -11,14 +11,30 @@ main div{
     padding-top: 1rem;
 }
 
-.about-me{
+#about-me{
     flex-direction: column;
     align-items: center;
     text-align: center;
     
 }
 
-.about-me p{
+#socialMedia{
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: -4rem;
+    border-radius: 10px;
+    border: 1.4px solid #506ee5;
+    padding-top: .5rem !important;
+    width: 20rem;
+    padding: 1rem;
+}
+
+#socialMedia p{
+    font-size: small;
+    font-weight: bold;
+}
+
+#about-me p{
     width: 50%;
 }
 
@@ -29,14 +45,14 @@ gap: 5%;
 }
 
 .left{
-    grid-column: 1 / 2 ;
+    grid-column: 1 / 2;
     padding-left: 1.5rem;
     justify-content: center;
 }
 
 .right{
     grid-column: 2 / span 2;
-    background-color: #d03c5e;   
+    background-color: #7037cd;   
 }
 
 header{
@@ -44,7 +60,7 @@ header{
     display: flex;
     height: 12rem;
     flex-direction: column;
-    background-color: #43777a;
+    background-color: #651f71;
     color: #FFF !important;
 }
 
@@ -62,17 +78,27 @@ img{
     height: 16rem;
     width: 14rem;
     border-radius: 50%;
-    border: 4px solid whitesmoke;
+    border: 4px solid #80378d;
 }
 
-a{
+.breadcrumb a{
     text-decoration: none;
-    color:#FFF;
     cursor: pointer;
+    color:#FFF;
+}
+
+#socialMedia a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(86, 86, 86);
 }
 
 a:hover{
-    color: #d95b45;
+    color: #68b2f8;
+}
+
+#socialMedia a:hover{
+    color: #68b2f8;
 }
 
 .breadcrumb {
@@ -94,11 +120,9 @@ a:hover{
     padding-left: 1rem;
 }
 
-
-/*
 @media only screen and (max-width: 768px){
     header{
-        height: 10rem;
+        height: 12rem;
         width: 100%;
         flex-direction: column;
         align-content: center;
@@ -110,13 +134,13 @@ a:hover{
     }
 
     .left{
-        grid-column: 1  / 5;
+        grid-column: 1  / 3;
         grid-row-start: 2;
         padding-left: 1.6rem;
     }
     
     .right{
-        grid-column-start: 1;
+        grid-column: 1 / 3;
         grid-row-start: 1;
     }
 
@@ -147,4 +171,4 @@ a:hover{
         border-radius: 10%;
         align-content: center;
     }
-}*/
+}
