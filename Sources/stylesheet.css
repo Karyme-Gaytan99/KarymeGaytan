@@ -29,7 +29,7 @@ main div{
     padding: 1rem;
 }
 
-#socialMedia p{
+#socialMedia li{
     font-size: small;
     font-weight: bold;
 }
